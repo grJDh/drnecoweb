@@ -4,12 +4,16 @@
 
 html {
   scroll-behavior: smooth;
+
+  scroll-snap-type: y proximity;
 }
 
 body {
   margin: 0;
   background-color: #f4cfa2;
   overflow-x: hidden;
+
+  scroll-snap-type: y proximity;
 }
 
 .absolute {
@@ -40,6 +44,7 @@ p {
 
 a {
   cursor: pointer;
+  padding: 0;
 }
 
 a:hover {
@@ -61,7 +66,6 @@ a:hover {
 
 header {
   color: white;
-  padding: 2.5625rem 3.1875rem 0rem 3.1875rem;
 
   display: flex;
   justify-content: space-between;
@@ -74,6 +78,11 @@ header {
   left: 0;
 
   z-index: 100;
+
+  background-color: #00000099;
+
+  height: 4rem;
+  padding: 0 3rem 0 3rem;
 }
 
 header > a > h2 {
@@ -227,6 +236,8 @@ section > img {
   display: flex;
   align-items: center;
   justify-content: center;
+
+  scroll-snap-align: center;
 }
 
 .download-text-block {
@@ -248,6 +259,8 @@ section > img {
   line-height: 4.875rem;
   color: #f4cfa2;
   width: 55.4375rem;
+
+  text-align: center;
 }
 
 .download-button {
@@ -285,7 +298,7 @@ footer {
   align-items: center;
   justify-content: space-between;
 
-  height: 100vh;
+  height: 52rem;
 
   padding-top: 4.6875rem;
   padding-bottom: 0.5rem;
@@ -296,7 +309,7 @@ footer > h2 {
   line-height: 77px;
   color: #dd2222;
 
-  margin-bottom: 2rem;
+  /* margin-bottom: 2rem; */
 }
 
 .credits {
