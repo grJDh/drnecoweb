@@ -9,6 +9,7 @@ html {
 body {
   margin: 0;
   background-color: #f4cfa2;
+  overflow-x: hidden;
 }
 
 .absolute {
@@ -34,6 +35,7 @@ p {
   color: black;
   margin: 0;
   padding-bottom: 0.625rem;
+  text-decoration: none;
 }
 
 a {
@@ -74,9 +76,14 @@ header {
   z-index: 100;
 }
 
-header > h2 {
+header > a > h2 {
   font-size: 1.25rem;
   color: white;
+  text-decoration: none;
+}
+
+header > a:hover {
+  text-decoration: none;
 }
 
 header > nav {
@@ -276,9 +283,12 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
+
+  height: 100vh;
 
   padding-top: 4.6875rem;
-  padding-bottom: 2.375rem;
+  padding-bottom: 0.5rem;
 }
 
 footer > h2 {
@@ -296,4 +306,32 @@ footer > h2 {
 .creator {
   display: flex;
   flex-direction: column;
+  align-items: center;
+
+  width: 18.125rem;
+}
+
+.creator > img {
+  border-radius: 50%;
+  width: 14.1875rem;
+
+  margin-bottom: 4rem;
+}
+
+.creator > h3 {
+  font-size: 36px;
+  color: #000000;
+  text-align: center;
+
+  margin-bottom: 1.5rem;
+}
+
+.creator > p {
+  text-align: center;
+  padding: 0;
+  font-weight: bold;
+}
+
+.creator > p:first-of-type {
+  margin-bottom: 1rem;
 }
