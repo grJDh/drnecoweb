@@ -1,0 +1,44 @@
+:root {
+  --clr-white: #ffffff;
+  --clr-black: #000000;
+  --clr-red: #dd2222;
+  --clr-cream: #f4cfa2;
+
+  --clr-alpha-black: rgba(0, 0, 0, 0.6);
+  --clr-alpha-red: rgba(221, 34, 34, 0.5);
+
+  --clr-shadow: rgba(57, 0, 0, 0.18);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  font: inherit;
+}
+
+img,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-snap-type: y proximity;
+}
+
+body {
+  background-color: var(--clr-cream);
+  overflow-x: hidden;
+
+  /* scroll-snap-type: y proximity; */
+}
+
+.absolute {
+  position: absolute;
+}
