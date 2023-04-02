@@ -140,6 +140,14 @@ header {
   transform: rotate(24deg);
 }
 
+.hero-scroll-button {
+  position: absolute;
+  width: 2.75rem;
+  bottom: 2.125rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
 @media (min-width: 475px) {
   .hero-wrapper p {
     font-size: var(--size-p-t);
