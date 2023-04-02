@@ -135,6 +135,7 @@ header a,
   padding-bottom: 2rem;
   transform: translateY(-100%);
   transition: transform var(--animation-time);
+  padding-left: 0;
 }
 
 .nav-mobile li a {
@@ -212,6 +213,10 @@ header a,
 
   .burger {
     display: none;
+  }
+
+  .burger:has(input:checked) ~ a {
+    color: var(--clr-white);
   }
 }
 
@@ -293,7 +298,7 @@ header a,
   }
 }
 
-@media (min-width: 700px) {
+@media (min-width: 600px) {
   .hero-cross {
     display: block;
   }
@@ -327,7 +332,7 @@ header a,
 }
 
 main {
-  padding: 3rem 0.625rem;
+  padding: 6rem 0.625rem;
 
   display: flex;
   justify-content: center;
