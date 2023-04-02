@@ -3,6 +3,7 @@
   --clr-black: #000000;
   --clr-red: #dd2222;
   --clr-cream: #f4cfa2;
+  --clr-gray: #ffffff80;
 
   --clr-alpha-black: rgba(0, 0, 0, 0.6);
   --clr-alpha-red: rgba(221, 34, 34, 0.5);
@@ -334,5 +335,83 @@ section img {
   .swordandstick {
     right: -12rem;
     top: 0rem;
+  }
+}
+
+.download-block {
+  height: 100vh;
+  background: url(./assets/bg/download.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.download-text-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 6rem;
+
+  background-color: var(--clr-alpha-black);
+
+  width: 100%;
+  height: 60%;
+
+  padding: 0.6rem;
+}
+
+.download-text-block h2 {
+  color: var(--clr-cream);
+  text-align: center;
+  max-width: 56rem;
+  font-size: 2rem;
+}
+
+.download-button {
+  display: flex;
+  position: relative;
+}
+
+.download-button button {
+  border: 0;
+  width: 12.125rem;
+  height: 4.3125rem;
+  background: rgba(221, 34, 34, 0.5);
+  border-radius: 118px;
+  cursor: no-drop;
+}
+
+.download-button > button > h3 {
+  color: var(--clr-gray);
+  font-size: 2rem;
+}
+
+.crab {
+  position: absolute;
+  top: -3.575rem;
+  right: -2.8125rem;
+  cursor: no-drop;
+  max-width: none;
+}
+
+@media (min-width: 460px) {
+  .crab {
+    top: -4.575rem;
+    right: 2.1875rem;
+  }
+}
+
+@media (min-width: 515px) {
+  .download-text-block h2 {
+    font-size: var(--size-h-t);
+  }
+}
+
+@media (min-width: 1050px) {
+  .download-text-block h2 {
+    font-size: var(--size-h-d);
   }
 }
