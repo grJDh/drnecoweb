@@ -313,17 +313,12 @@ header a,
 
   .hero-sword,
   .hero-wand {
-    left: 35rem;
+    left: 43rem;
     transform: rotate(0);
   }
 
   .hero-wrapper {
     max-width: 41rem;
-  }
-
-  .hero-sword,
-  .hero-wand {
-    left: 40rem;
   }
 }
 
@@ -419,7 +414,6 @@ section img {
   }
 
   section:nth-child(2n) {
-    /* margin-left: 18rem; */
     align-self: end;
   }
 
@@ -588,6 +582,7 @@ footer h2 {
 
 h3 {
   font-size: 2rem;
+  margin-bottom: 0.5rem;
 }
 
 .creator {
@@ -680,5 +675,19 @@ h3 {
 
   .credits-final-links p {
     text-align: right;
+  }
+
+  .creator p:first-of-type {
+    margin-bottom: 1.5rem;
+  }
+
+  h3 {
+    margin-bottom: 1.5rem;
+  }
+}
+
+@media (min-width: 1050px) {
+  .creator p {
+    font-size: var(--size-p-t);
   }
 }
