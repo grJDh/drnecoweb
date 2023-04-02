@@ -226,6 +226,7 @@ header a,
   background-size: cover;
   background-position: center;
 
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -568,6 +569,7 @@ footer {
 
 footer h2 {
   color: var(--clr-red);
+  font-size: var(--size-h-t);
 }
 
 .credits {
