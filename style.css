@@ -50,14 +50,17 @@ svg {
   max-width: 100%;
 }
 
+html,
+body {
+  overflow-x: hidden;
+}
+
 html {
   scroll-behavior: smooth;
-  scroll-snap-type: y proximity;
 }
 
 body {
   background-color: var(--clr-cream);
-  overflow-x: hidden;
 }
 
 h1,
@@ -91,7 +94,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
+  width: 100vw;
   top: 0;
   left: 0;
   z-index: 100;
@@ -332,7 +335,7 @@ header a,
 
 main {
   padding: 6rem 0.5rem;
-
+  overflow-x: hidden;
   display: flex;
   justify-content: center;
 }
@@ -589,7 +592,7 @@ footer h2 {
 .credits {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: start;
   flex-wrap: wrap;
   gap: 5rem;
 
