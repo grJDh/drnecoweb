@@ -15,9 +15,13 @@
   --size-p-t: 1rem;
   --size-p-d: 1.2rem;
 
-  --size-h-m: 1.5rem;
-  --size-h-t: 3rem;
+  --size-h-m: 1.75rem;
+  --size-h-t: 2.5rem;
   --size-h-d: 4rem;
+
+  --size-download-h-m: 2rem;
+  --size-download-h-t: 3rem;
+  --size-download-h-l: 3.5rem;
 
   --line-height-m: 1.3rem;
   --line-height-t: 1.4rem;
@@ -327,10 +331,16 @@ header a,
 } */
 
 main {
-  padding: 6rem 0.625rem;
+  padding: 6rem 0.5rem;
 
   display: flex;
   justify-content: center;
+}
+
+@media (min-width: 600px) {
+  main {
+    padding: 8rem 2rem;
+  }
 }
 
 .sections-wrapper {
@@ -362,7 +372,7 @@ section img {
 }
 
 .toad {
-  right: -28rem;
+  right: -30rem;
 }
 
 .minogob {
@@ -371,8 +381,8 @@ section img {
 }
 
 .book {
-  right: -27rem;
-  top: -4rem;
+  right: -29rem;
+  top: -2rem;
 }
 
 .rats {
@@ -395,7 +405,7 @@ section img {
   }
 
   section {
-    width: 85%;
+    width: 95%;
     max-width: 46rem;
   }
 }
@@ -406,16 +416,13 @@ section img {
     max-width: 32rem;
   }
 
-  section:nth-child(2n) {
-    background-color: var(--clr-alpha-cream);
-  }
-
   section p {
     max-width: 40rem;
   }
 
   section:nth-child(2n) {
     align-self: end;
+    background-color: var(--clr-alpha-cream);
   }
 
   .sections-wrapper {
@@ -510,6 +517,7 @@ section img {
   text-align: center;
   max-width: 56rem;
   font-size: 2rem;
+  font-size: var(--size-download-h-m);
 }
 
 .download-button {
@@ -548,7 +556,13 @@ section img {
 
 @media (min-width: 515px) {
   .download-text-block h2 {
-    font-size: var(--size-h-t);
+    font-size: var(--size-download-h-t);
+  }
+}
+
+@media (min-width: 802px) {
+  .download-text-block h2 {
+    font-size: var(--size-download-h-l);
   }
 }
 
@@ -604,12 +618,12 @@ h3 {
   font-weight: bold;
 }
 
-.creator p a {
+footer a {
   color: var(--clr-black);
   text-decoration: underline;
 }
 
-.creator p a:hover {
+footer a:hover {
   color: var(--clr-red);
   font-weight: bold;
 }
@@ -645,10 +659,6 @@ h3 {
   flex-wrap: wrap;
 
   gap: 1rem;
-}
-
-.credits-final a {
-  color: var(--clr-black);
 }
 
 .credits-final p {
