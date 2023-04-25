@@ -375,7 +375,8 @@ section img {
 }
 
 .toad {
-  right: -30rem;
+  right: -31rem;
+  top: -2rem;
 }
 
 .minogob {
@@ -384,13 +385,13 @@ section img {
 }
 
 .book {
-  right: -29rem;
+  right: -31rem;
   top: -2rem;
 }
 
 .rats {
   left: -26rem;
-  top: -2rem;
+  top: -5rem;
 }
 
 .swordandstick {
@@ -458,6 +459,7 @@ section img {
   section:nth-child(2n) {
     margin-left: 30rem;
     align-self: auto;
+    max-width: 48rem;
   }
 
   section img {
@@ -476,7 +478,7 @@ section img {
 
   .book {
     right: -24rem;
-    top: 4rem;
+    top: 3rem;
   }
 
   .rats {
